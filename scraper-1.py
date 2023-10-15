@@ -3,16 +3,17 @@ import pandas as pd
 # URL of the webpage with the table
 url = 'https://www.psx.com.pk/market-summary/'
 tables = pd.read_html(url)
-df=len(tables)
+#df=len(tables)
 st.title("CEMENT Sector Market Summary")
+
 import plotly.express as px
 
 # Example Plotly chart
 fig = px.bar(tables[5], x='CEMENT', y='CEMENT.7', title='Table Data Volume')
 st.plotly_chart(fig)
-st.write("Number of Tables:")
-st.write(df)
-st.write(tables[5])
+#st.write("Number of Tables:")
+#st.write(df)
+#st.write(tables[5])
 
 
 
