@@ -9,9 +9,9 @@ st.title("CEMENT Sector Market Summary")
 import plotly.express as px
 
 # Example Plotly chart
-import plotly.express as px
-fig = px.bar(tables[5], x='CEMENT', y='CEMENT.7', title='Table Data Volume')
-st.plotly_chart(fig)
+# import plotly.express as px
+# fig = px.bar(tables[5], x='CEMENT', y='CEMENT.7', title='Table Data Volume')
+# st.plotly_chart(fig)
 st.write("Number of Tables:")
 st.write(df)
 st.write(tables[5])
