@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import requests
+
 # URL of the webpage with the table
 url = 'https://www.psx.com.pk/market-summary/'
 tables = pd.read_html(url)
